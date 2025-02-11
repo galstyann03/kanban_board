@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "checkJs": false,
+      "target": "ES6",
+      "module": "commonjs"
+    },
+    "include": [
+      "app/assets/javascripts/**/*.coffee",
+      "app/javascript/**/*.coffee",
+      "app/assets/javascripts/**/*.js",
+      "app/javascript/**/*.js"
+    ]
+  }
+  

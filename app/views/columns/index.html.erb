@@ -1,0 +1,13 @@
+<div class="kanban-board">
+  <% @columns.each do |column| %>
+    <div class="column droppable" data-column-id="<%= column.id %>">
+      <h2><%= column.name %></h2>
+      <div class="tasks-container" data-column-id="<%= column.id %>">
+        <% column.tasks.each do |task| %>
+          <%= render 'tasks/task', task: task %>
+        <% end %>
+      </div>
+      <%= link_to 'Add Task', new_task_path(column_id: column.id), class: 'add-task' %>
+    </div>
+  <% end %>
+</div>
